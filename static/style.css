@@ -1,0 +1,43 @@
+
+h1 {
+  font-family: PressStart2P;
+  color: aqua;
+}
+
+
+/* FONTS */
+
+@font-face {
+  font-family: "PressStart2P";
+  src: url("PressStart2P.ttf");
+}
+
+
+/* ANIMS */
+
+.anim-typewrite {
+    overflow: hidden;
+    white-space: nowrap;
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-timing-function: steps(100, end);
+    
+}
+
+.anim-blink {
+    animation: blink 1s infinite;
+    
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0 }
+  20% { width: 0}
+  100% { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink {
+  from { color: transparent }
+  to { color: cyan; }
+}

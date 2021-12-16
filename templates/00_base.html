@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>
+        {% block title %}{% endblock %}
+        Miguel dp
+    </title>
+    <link rel="canonical" href="migueldp.tk" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- META BLOCK -->
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="Spanish">
+    <meta name="author" content="Migueldp">
+    {% block meta %}
+    <meta name="title" content="migueldp">
+    <meta name="description" content="Desarrollador de software. Página web personal y portfolio">
+    <meta name="keywords" content="portfolio,personal,developer,dev,sotware,desarrollador,programador">
+    <meta name="robots" content="index, follow">
+    {% endblock %}
+
+    <!-- SCRIPTS -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <!-- google ads 
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-ad-client="ca-pub-9934738138092081"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9934738138092081"crossorigin="anonymous"></script>
+    -->
+
+</head>
+
+<body>
+    <header>
+        <nav class="glassed">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('life') }}">Vida</a></li>
+                <li><a href="{{ url_for('projects') }}">Proyectos</a></li>
+                <li><a href="{{ url_for('brand') }}">Marca</a></li>
+                <li><a href="{{ url_for('contact') }}">Contacto</a></li>
+                <li><a href="{{ url_for('blog') }}">Blog</a></li>
+            </ul>
+        </nav>
+        {% block header %}
+        {% endblock %}
+    </header>
+    <aside>
+        {% block aside %}
+        {% endblock %}
+    </aside>
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+    <footer>
+        {% block footer %}
+        {% endblock %}
+    </footer>
+
+</body>
+
+</html>
