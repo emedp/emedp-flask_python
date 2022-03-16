@@ -1,6 +1,7 @@
 {% extends '00_base.html' %}
 
 {% block title %}
+Marca - 
 {% endblock %}
 
 {% block meta %}
@@ -14,6 +15,50 @@
 {% endblock %}
 
 {% block main %}
+
+<h1>Emedpware</h1>
+
+<section>
+    <img src="{{ url_for('static', filename='logos/logo_emedpware_small.png') }}" alt="icono emedpware pequeño">
+    <br>
+    <img src="{{ url_for('static', filename='logos/logo_emedpware_medium.png') }}" alt="icono emedpware mediano">
+    <br>
+    <img src="{{ url_for('static', filename='logos/logo_emedpware_large.png') }}" alt="icono emedpware grande">
+    <p>
+        Emedpware pretende ser una firma de tecnología principalmente a través del software. Un sello que represente la
+        calidad y una experiencia satisfactoria. <br>
+        Los valores que inteta transmitir son los de modernidad, esmero, cordialidad, sabiduría, sinceridad, honestidad,
+        honradez, sensatez y orden entre otras. <br>
+        El tiempo es el bien más valioso de la vida, por ello la intención es simplificar, optimizar y mejorar los procesos
+        cotidianos. <br>
+        Gracias al software, la marca pretende crear apps, webs y videojuegos que cumplan con la visión descrita. Estos
+        productos podrán ser propios o a encargo ofreciendo
+        por lo tanto servicios para ello. <br>
+        Para contruir productos modernos y que duren al paso del tiempo se utilizan las últimas tecnologías con el
+        compromiso de mantenerse actualizada en todo momento.
+    </p>
+</section>
+
+<section>
+    <h2>Servicios</h2>
+    <ul>
+        <li>Desarrollo de apps de escritorio</li>
+        <li>Desarrollo de apps android</li>
+        <li>Creación de páginas web</li>
+        <li>Creación de videojuegos</li>
+        <li>Consultoría para proyectos informáticos</li>
+        <li>Diseño UI/UX para mocking</li>
+        <li>Creación de diseños gráficos: iconos, logos, banners...</li>
+        <li>Creación de modelos 3D</li>
+    </ul>
+    
+    <p>
+        ¿Necesitas ayuda con alguno de estos temas? Ponte en contacto conmigo a través de mis redes y veámos que podemos
+        hacer juntos.
+    </p>
+    <a href="{{ url_for('rrss') }}"><button>Contactar</button></a>
+</section>
+
 {% endblock %}
 
 {% block footer %}

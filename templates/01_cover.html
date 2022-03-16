@@ -14,17 +14,62 @@
 {% endblock %}
 
 {% block main %}
-<h1>
-    <span class="anim-typewrite">Hola, soy Miguel</span>
-    <span class="anim-blink">_</span>
-</h1>
+
 <section>
-    <p>software developer</p>
-    <p>
-        Bienvenido a mi página web. Principalmente, es mi carta de presentación y portfolio.<br>
-        <br>
-        <br>
+    <h1>&lt;&#47; Miguel dp &#47;&gt;</h1>
+    <p class="console">
+        Software developer
+        <span class="anim-blink">_</span>
     </p>
+    
+    <p>
+        Esta es mi página web personal. Su función es servir como mi portfolio y carta de presentación. <br>
+        Podrás encontrar información sobre quién soy a que me dedico, mis proyectos publicados y mi marca personal.
+    </p>
+</section>
+
+<section>
+    <h2>Conoce a Miguel</h2>
+    <p>
+        Podrás conocer un poco a la persona entre bambalinas, quién soy y mis conocimientos.
+    </p>
+    <a href="{{ url_for('life') }}"><button>Conocerme</button></a>
+</section>
+
+<section>
+    <h2>Proyectos</h2>
+    <p>
+        Con el tiempo he creado un porfolio que me ayudase a ganar experiencia y a llevar a cabo ideas en mis campos de interés. <br>
+        Un punto que me encanta de mi profesión es que te convierte en una persona multidisciplinar. He llevado mis inquietudes a mi terreno y he creado proyectos 
+        que me ayudasen en mi día a día y brindarlos a la sociedad para ayudar con ellos.
+    </p>
+    <a href="{{ url_for('projects') }}"><button>Ver proyectos</button></a>
+</section>
+
+<section>
+    <h2>Emedpware</h2>
+    <p>
+        Es mi marca personal y mi presencia profesional. Donde amparar mis proyectos bajo la misma firma, lo que implica un compromiso de valores. 
+        Emedpware tiene una visión y una misión. Si quieres conocer más sobre la marca puedes consultar su espacio.
+    </p>
+    <a href="{{ url_for('brand') }}"><button>Visitar Emedpware</button></a>
+</section>
+
+<section>
+    <h2>Redes</h2>
+    <p>
+        Puedes conocer más sobre mi, mis trabajos y Emedpware en mis redes sociales y perfiles.
+    </p>
+    
+    <h2>Asesoría, diseño y programación</h2>
+    <p>
+        ¿Crees que podría ayudarte con tu proyecto? <br>
+        Ya sea que sólo necesitas asesoría o un proyecto completo, 
+        mi especialidad es el desarrollo de software. Apps de escritorio, apps móviles, páginas web y videojuegos. 
+        También tengo experiencia con el UI/UX, diseño gráfico y modelado 3D. <br>
+        Contáctame por mis redes sociales o <a href="mailto:migueldinizp@gmail.com">&lt;&#47; envíame un email &#47;&gt;</a> para ponerte en contacto conmigo.
+    </p>
+    <a href="{{ url_for('rrss') }}"><button>Contactar</button></a>
 </section>
 
 {% endblock %}

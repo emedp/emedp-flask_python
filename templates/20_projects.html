@@ -1,6 +1,7 @@
 {% extends '00_base.html' %}
 
 {% block title %}
+Proyectos - 
 {% endblock %}
 
 {% block meta %}
@@ -14,6 +15,69 @@
 {% endblock %}
 
 {% block main %}
+
+<h1>Proyectos</h1>
+
+<section id="olympics">
+    <h2>Olympics</h2>
+    <p>
+        Conjunto de apps móviles, buscan ayudar a las personas en distintos aspectos como organización, eficiencia, comunicación, salud, información... <br>
+        Cada una representa a un dios Olímpico y un tipo de aplicación prototipo.
+    </p>
+    <br>
+    <h2>Atenea</h2>
+    <img src="{{ url_for('static', filename='logos/logo_atenea.png') }}" alt="icono Atenea" class="img-icon128">
+    
+    <p>
+        <b>Tipo de App:</b> Gestor de contraseñas<br>
+        <b>Fecha publicación:</b> 30/01/2021<br>
+    </p>
+    <a target="_blank" href="https://play.google.com/store/apps/details?id=example.digitallife">
+        <img src="{{ url_for('static', filename='google-play-badge.png') }}" alt="google play badge" class="img-badge">
+    </a>
+    <p>
+        La primera de las 12 y primera aplicación que publiqué. <br>
+        La idea origina en 2018 mientras cursaba la carrera de informática, estaba teniendo problemas para gestionar mis contraseñas por el volumen de cuentas que tenía 
+        así que me dispuse a descargar una app gestor de contraseñas. Todas utilizaban servidores en la nube para almacenar los datos y eso me parecía muy poco seguro 
+        por lo que aproveché mis conocimientos para crear mi propia app que cumpliese con su cometido y fuese realmente segura. <br>
+        La aplicación fue evolucionando hasta que en 2021 comenzó el proyecto de Olympics y le otorgase la imagen de la diosa Atenea.
+    </p>
+</section>
+
+<section id="android-apps">
+    <h2>Gesture Builder Tool</h2>
+    <img src="{{ url_for('static', filename='logos/logo_gesture_BT.png') }}" alt="icono Gesture Builder Tool" class="img-icon128">
+    
+    <p>
+        <b>Tipo de App:</b> Developer Tool<br>
+        <b>Fecha publicación:</b> 02/10/2021<br>
+    </p>
+    <a target="_blank" href="https://play.google.com/store/apps/details?id=migueldp.runeforge">
+        <img src="{{ url_for('static', filename='google-play-badge.png') }}" alt="google play badge" class="img-badge">
+    </a>
+    <p>
+        Esta app nació por mi necesidad de usar una libreria de Android Studio. La libreria se basa en trazos dibujados, los
+        cuales tenía que crear en mi móvil. <br>
+        Descubrí en el proceso que las apps ya existentes que creaban el archivo con los trazos estaban completamente
+        desactualizadas y que sólo existian unas pocas en toda la tienda. <br>
+        Así que me dispuse a hacer mi versión para practicar primero con la librería y contribuir a la comunidad dev.
+    </p>
+</section>
+
+<section id="webpage">
+    <h2>Página web</h2>
+
+    <img src="{{ url_for('static', filename='logos/logo_emedpware.png') }}" alt="icono emedpware" class="img-icon128">
+    <p>
+        <b>Fecha publicación:</b> 20/03/2022<br>
+    </p>
+    <p>
+        El poder leer esto, significa que la página web en la que estás también ha sido un proyecto. 
+        En marzo de 2022, con la creación de mi <a href="{{ url_for('brand') }}">marca personal</a> y por necesidad y ganas de tener un porfolio,
+        aproveché mis conocimientos de web para crear mi propia página.
+    </p>
+</section>
+
 {% endblock %}
 
 {% block footer %}

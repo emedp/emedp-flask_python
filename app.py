@@ -18,16 +18,25 @@ def projects():
     return render_template('20_projects.html')
 
 
-@app.route("/marca")
+@app.route("/atenea")
+def atenea():
+    return render_template('20_atenea.html')
+
+@app.route("/emedpware")
 def brand():
     return render_template('30_brand.html')
 
 
-@app.route("/Contacto")
-def contact():
-    return render_template('40_contact.html')
+@app.route("/rrss")
+def rrss():
+    return render_template('40_rrss.html')
 
 
-@app.route("/blog")
-def blog():
-    return render_template('90_blog.html')
+@app.route("/privacy")
+def privacy():
+    return render_template('98_privacy.html')
+
+
+@app.route("/tos")
+def tos():
+    return render_template('99_terms_of_service.html')

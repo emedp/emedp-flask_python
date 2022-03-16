@@ -1,0 +1,99 @@
+{% extends '00_base.html' %}
+
+{% block title %}
+Contacto - 
+{% endblock %}
+
+{% block meta %}
+{{ super() }}
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block aside %}
+{% endblock %}
+
+{% block main %}
+<h1>Redes Sociales</h1>
+
+<div>
+    <h2>Emedpware</h2>
+
+    <a target="_blank" class="contact-link" style="background-color: #689f38;" href="https://play.google.com/store/apps/dev?id=9180314146924738339">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_google_play.svg') }}" alt=""> Google Play Store
+    </a>
+
+    <a target="_blank" class="contact-link" style="background-color: #FF0000;"
+        href="https://www.youtube.com/channel/UCj13V4FnfeK6rd7uBglwWFA">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_youtube.svg') }}" alt=""> YouTube (Emedpware)
+    </a>
+
+    <a target="_blank" class="contact-link" style="background-color: #1da1f2;" href="https://twitter.com/emedpware">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_twitter.svg') }}" alt=""> Twitter
+    </a>
+
+    <!--- TODO: poner enlace de discord 
+        <a target="_blank" class="contact-link" style="background-color: #7289da;" href="#"> 
+            <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_discord.svg') }}" alt=""> Discord
+        </a>
+        --->
+</div>
+
+<br>
+
+<div>
+    <h2>Developer</h2>
+    
+    <a target="_blank" class="contact-link" style="background-color: #272b33;" href="https://github.com/emedp">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_github.svg') }}" alt=""> GitHub
+    </a>
+    
+    <a target="_blank" class="contact-link" style="background-color: #1e1f26;" href="https://codepen.io/emedp">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_codepen.svg') }}" alt=""> CodePen
+    </a>
+    
+    <a target="_blank" class="contact-link" style="background-color: #FF0000;"
+        href="https://www.youtube.com/channel/UCMOCmmSfIk8or9YPKQVYRrw">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_youtube.svg') }}" alt=""> YouTube (Emedp
+        Dev)
+    </a>
+    
+    <a target="_blank" class="contact-link" style="background-color: #0077b5;"
+        href="https://www.linkedin.com/in/miguel-diniz-pereira-986669173">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_linkedin.svg') }}" alt=""> LinkedIn
+    </a>
+    
+</div>
+
+<br>
+
+<div>
+    <h2>Personales</h2>
+
+    <a target="_blank" class="contact-link" style="background-color: #e1306c;" href="https://www.instagram.com/mikysdp">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_instagram.svg') }}" alt=""> Instagram
+    </a>
+
+    <a target="_blank" class="contact-link" style="background-color: #FF0000;"
+        href="https://www.youtube.com/channel/UCRqJ38F1MXze06bvc1e9e9A">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_youtube.svg') }}" alt=""> YouTube
+        (Mikysdp)
+    </a>
+
+    <a target="_blank" class="contact-link" style="background-color: #FF0000;"
+        href="https://www.youtube.com/channel/UCXtnkGXyb-ebAP05ramqVPw">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_youtube.svg') }}" alt=""> YouTube
+        (Emedp Games)
+    </a>
+
+    <a target="_blank" class="contact-link" style="background-color: #9146FF;" href="https://www.twitch.tv/mikysdp">
+        <img class="img-logo-brand" src="{{ url_for('static', filename='icons/ic_twitch.svg') }}" alt=""> Twitch
+    </a>
+
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
