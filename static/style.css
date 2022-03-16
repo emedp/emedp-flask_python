@@ -1,43 +1,158 @@
+/* CSS BASIC */
 
-h1 {
-  font-family: PressStart2P;
-  color: aqua;
-}
+/* COLOR PALETTE */
 
+/*
+AZUL: material cyan A400
+#00E5FF
+GRIS:
+#212121
+BLANCO:
+#FFFFFF
+NEGRO:
+#000000
+https://coolors.co/gradient-maker/60efff-00ff87
+https://www.google.com/search?q=verde+azul+neon&tbm=isch&ved=2ahUKEwiDqYjy_cj2AhXFyCoKHbbVBpMQ2-cCegQIABAA&oq=verde+azul+neon&gs_lcp=CgNpbWcQAzIGCAAQCBAeMgYIABAIEB4yBggAEAgQHjoHCCMQ7wMQJzoECAAQQzoFCAAQgAQ6BggAEAcQHjoHCAAQsQMQQzoICAAQsQMQgwE6CAgAEIAEELEDOgYIABAFEB5Q8AdYrRdgpRloAHAAeACAAW-IAcwLkgEEMTQuMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=wfowYsPEOsWRqwG2q5uYCQ&bih=939&biw=1879&client=opera-gx&hs=HFx
+
+*/
 
 /* FONTS */
 
 @font-face {
-  font-family: "PressStart2P";
-  src: url("PressStart2P.ttf");
+  font-family: "Iceland";
+  src: url("Iceland.ttf");
 }
 
+body {
+  margin: 0;
+  background-color: #121212;
+  text-align: center;
+}
+
+header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  padding: 16px;
+  text-align: center;
+}
+
+main {
+  margin: 32px;
+}
+
+footer {
+  background-color: black;
+  padding: 16px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: Iceland;
+}
+
+h1 {
+  font-size: 6em;
+  margin: auto;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+p, a, li, button {
+  color: white;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+p, ul {
+  text-align: justify;
+  width: fit-content;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CLASSES */
+
+.console {
+  color: lightgreen;
+}
+
+.nav-item {
+  color: white;
+  font-family: Iceland;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 16px;
+}
+
+.nav-item:hover {
+  color: lightgreen;
+}
+
+.contact-link {
+  display: block;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 50%;
+  padding: 16px;
+  border-radius: 24px;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* IMG */
+
+.img-logo-brand {
+  width: 16px;
+  height: 16px;
+}
+
+.img-icon64 {
+  width: 64px;
+  height: 64px;
+}
+
+.img-icon128 {
+  width: 128px;
+  height: 128px;
+}
+
+.img-badge {
+  width: auto;
+  height: 100px;
+}
 
 /* ANIMS */
 
-.anim-typewrite {
-    overflow: hidden;
-    white-space: nowrap;
-    animation-name: typing;
-    animation-duration: 5s;
-    animation-timing-function: steps(100, end);
-    
-}
-
 .anim-blink {
     animation: blink 1s infinite;
-    
-}
-
-/* The typing effect */
-@keyframes typing {
-  0% { width: 0 }
-  20% { width: 0}
-  100% { width: 100% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink {
   from { color: transparent }
-  to { color: cyan; }
+  to { color: lightgreen; }
 }
